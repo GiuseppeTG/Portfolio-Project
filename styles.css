@@ -9,7 +9,7 @@ body{
 }
 
 header{
-  border: aqua solid 2px;
+  /* border: aqua solid 2px; */
   display: flex;
   justify-content: space-between;
 }
@@ -22,7 +22,7 @@ header{
 }
 
 main{
-  border: red solid 2px;
+  /* border: red solid 2px; */
   height: 100vh;
   margin: 30px 16px;
 }
@@ -32,7 +32,7 @@ img{
 }
 
 .name-container{
-  border: green solid 2px;
+  /* border: green solid 2px; */
   height: fit-content;
   width: 220px;
   margin-right: 84px;
@@ -47,7 +47,7 @@ img{
 }
 
 .presentation-container{
-  border: blue solid 2px;
+  /* border: blue solid 2px; */
   margin-top: 16px;
 }
 
