@@ -1,37 +1,37 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 14px;
 }
 
-header{
+header {
   /* border: aqua solid 2px; */
   display: flex;
   justify-content: space-between;
 }
 
-.menu-button{
+.menu-button {
   border: none;
   font-size: 20px;
   margin: 19px 16px;
-  color: #1A2236;
+  color: #1a2236;
 }
 
-main{
+main {
   /* border: red solid 2px; */
   height: 100vh;
   margin: 30px 16px;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.name-container{
+.name-container {
   /* border: green solid 2px; */
   height: fit-content;
   width: 220px;
@@ -39,35 +39,34 @@ img{
 }
 
 .name-container h1 {
-  color: #1A2236;
-  font-family: 'Playfair Display', serif; 
+  color: #1a2236;
+  font-family: 'Playfair Display', serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 100;
 }
 
-.presentation-container{
+.presentation-container {
   /* border: blue solid 2px; */
   margin-top: 16px;
 }
 
 .presentation-container p {
   font-family: 'Poppins', sans-serif;
-  color: #1A2236;
+  color: #1a2236;
 }
 
-.collab-button{
+.collab-button {
   height: 50px;
   width: 100%;
   border: none;
-  background-color: #1A2236;
-  margin: 40px 0px;
+  background-color: #1a2236;
+  margin: 40px 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: white;
 }
 
-.collab-button:hover{
+.collab-button:hover {
   background-color: #1a2236e1;
 }
-
