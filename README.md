@@ -10,6 +10,22 @@
 - Major languages: HTML and CSS
 - Technologies used: VSC, git and GitHub
 
+## Getting Started
+
+To run this project locally on your computer clone this repo and open it in you browser. Thanks for watching.
+
+### Prerequisites
+
+### Setup
+
+### Install
+
+### Usage
+
+### Run tests
+
+### Deployment
+
 ## Authors
 
 👤 **Giuseppe Tomasini**
