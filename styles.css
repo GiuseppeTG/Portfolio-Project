@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  border: aqua solid 2px;
+  /* border: aqua solid 2px; */
   display: flex;
   justify-content: space-between;
 }
@@ -22,7 +22,7 @@ header {
 }
 
 main {
-  border: red solid 2px;
+  /* border: red solid 2px; */
   height: fit-content;
   width: 90%;
   margin: 30px auto;
@@ -35,7 +35,7 @@ main {
 }
 
 .name-container {
-  border: green solid 2px;
+  /* border: green solid 2px; */
   height: fit-content;
 }
 
@@ -48,7 +48,7 @@ main {
 }
 
 .presentation-container {
-  border: blue solid 2px;
+  /* border: blue solid 2px; */
   margin-top: 16px;
 }
 
@@ -72,6 +72,6 @@ main {
   background-color: #1a2236e1;
 }
 
-.figures-big1-container img{
+.figures-big1-container img {
   width: 100%;
 }
