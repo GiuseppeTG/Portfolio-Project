@@ -12,21 +12,14 @@
 
 ## Getting Started
 
-To run this project locally on your computer clone this repo and open it in you browser. Thanks for watching.
+To run this project locally on your computer clone using "git clone" command with this repo url.
+Open the file in your code editor. 
+Run the project in you browser. 
+Thanks for watching.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-## Authors
+### Prerequisites 
+Visual Studio Code
+Browser (tested with Chrome)
 
 👤 **Giuseppe Tomasini**
 
