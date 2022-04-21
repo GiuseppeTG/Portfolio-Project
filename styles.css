@@ -19,6 +19,7 @@ header {
   margin: 19px 16px;
   color: #1a2236;
   background-color: transparent;
+  cursor: pointer;
 }
 
 main {
