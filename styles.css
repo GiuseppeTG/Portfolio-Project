@@ -164,14 +164,23 @@ main {
 
 .languages-container {
   background-color: #1c528a;
+  background-image: url(images/languages-corner-image.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .frameworks-container {
   background-color: #e2505c;
+  background-image: url(images/frameworks-corner-image.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .skill-container {
   background-color: #febf52;
+  background-image: url(images/skills-corner-image.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .title-about-content {
