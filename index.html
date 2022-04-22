@@ -9,38 +9,194 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d1333a485b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;300;400;500;800&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">  <script src="https://kit.fontawesome.com/d1333a485b.js" crossorigin="anonymous"></script>
 
 <body>
 
-  <header class="header-container">
-    <img src="images/figures-small1.png" alt="header figures">
-    <nav>
-      <button class="menu-button" type="button">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
-  </header>
+  <nav class="nav-menu">
+    <button class="menu-button" type="button">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- HEADLINE SECTION -->
 
   <main class="main">
-    <section>
-      <div class="name-container">
+    <section class="headline-section headline-container">
+      <header class="section-header">
         <h1>Giuseppe<br>Tomasini</h1>
-      </div>
+      </header>
       <section class="presentation-container">
-        <p>
+        <p class="descriptive-p">
           Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
           If you like what you see and have a project you need coded, don’t hesitate and contact me.
         </p>
       </section>
-  
       <button class="collab-button" type="button">Start collaboration</button>
+    </section>
+
+    <div class="background-separator"></div>
+
+    <!-- WORK SECTION -->
+
+    <section class="work-section work-section-grid">
+      <header class="section-header">
+        <h1>Projects</h1>
+      </header>
+        <div class="project-container">
+          <img class="project-image" src="images/project-1.jpg" alt="project image">
+          <h2 class="project-name">Project name goes here</h2>
+          <ul class="languages-list">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+          </ul>
+          <button type="button" class="see-this-project-button">See this project<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="images/project-2.jpg" alt="project image">
+          <h2 class="project-name">Project name goes here</h2>
+          <ul class="languages-list">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+          </ul>
+          <button type="button" class="see-this-project-button">See this project<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="images/project-3.jpg" alt="project image">
+          <h2 class="project-name">Project name goes here</h2>
+          <ul class="languages-list">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+          </ul>
+          <button type="button" class="see-this-project-button">See this project<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="images/project-4.jpg" alt="project image">
+          <h2 class="project-name">Project name goes here</h2>
+          <ul class="languages-list">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+          </ul>
+          <button type="button" class="see-this-project-button">See this project<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="images/project-5.jpg" alt="project image">
+          <h2 class="project-name">Project name goes here</h2>
+          <ul class="languages-list">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+          </ul>
+          <button type="button" class="see-this-project-button">See this project<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="images/project-6.jpg" alt="project image">
+          <h2 class="project-name">Project name goes here</h2>
+          <ul class="languages-list">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+          </ul>
+          <button type="button" class="see-this-project-button">See this project<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-myself-section">
+      <div class="about-container">
+        <header class="section-header projects-header">
+          <h1>About</h1>
+        </header>
+        <div class="about-myself-container">
+          <p class="descriptive-p">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!
+          </p>
+        </div>
+        <button class="cv-button" type="button">Get my CV <i class="fa-solid fa-download"></i></button>
+      </div>
+
+      <div class="about-content-grid">
+        <div class="languages-container color-box-container">
+          <h3 class="title-about-content">Languages
+          </h3>
+          <ul class="about-content-list">
+            <li>JavaScript (ES5/ES6)</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>  
+        </div>
+        <div class="frameworks-container color-box-container">
+          <h3 class="title-about-content">Frameworks
+          </h3>
+          <ul class="about-content-list">
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSpec</li>
+            <li>Capibara</li>
+            <li>Selenium</li>
+          </ul>  
+        </div>
+        <div class="skill-container color-box-container">
+          <h3 class="title-about-content">Skills
+          </h3>
+          <ul class="about-content-list">
+            <li>Codekit</li>
+            <li>Codepen</li>
+            <li>GiuHub</li>
+            <li>GitLab</li>
+            <li>Terminal</li>
+          </ul>  
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Started Section -->
+
+    <section class="get-started-section">
+      <div class="get-started-container">
+        <header class="section-header get-started-header">
+          <h1>Get Started</h1>
+        </header>
+        <div class="about-myself-container">
+          <p class="descriptive-p">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!
+          </p>
+        </div>
+        <form class="get-started-form" action="">
+          <input class="form-text-box" type="text" id="fname" name="fname" placeholder="Your name">
+          <input class="form-text-box" type="email" id="femail" name="femail" placeholder="Your email">
+          <input class="comment-box" type="text" id="fcomment" name="fcomment" placeholder="Enter a message here...">
+        </form>
+        <button class="get-started-button" type="submit" value="submit">
+          Start collaboration
+        </button>
+      </div>
+      
+      <!-- Social Media Section -->
+      
+      <div class="social-media-container">
+        <button class="get-resume-button" type="button">
+          Get my Resume<i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+        <ul class="social-media-list">
+          <li><i class="fa-brands fa-github"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <div class="background-separator">
 
-  </div>
+
 </body>
 </html>
