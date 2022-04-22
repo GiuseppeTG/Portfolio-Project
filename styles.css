@@ -83,6 +83,10 @@ main {
   grid-template-columns: auto;
 }
 
+.work-section-header h1 {
+  margin: 32px 5%;
+}
+
 .project-container {
   background-color: #1a2236;
 }
