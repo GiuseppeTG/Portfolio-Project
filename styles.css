@@ -12,7 +12,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 main {
@@ -52,7 +52,6 @@ p {
   cursor: pointer;
 }
 
-
 .section-info-container {
   margin: 32px 5%;
 }
@@ -81,7 +80,17 @@ p {
   cursor: pointer;
 }
 
-.link-box a{
+footer a {
+  border: none;
+  background-color: transparent;
+  margin: 25px 5% 35px 5%;
+  color: #92dcdc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.link-box a {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: white;
@@ -113,12 +122,21 @@ p {
   width: 100%;
 }
 
-.project-container h2{
+.project-container h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: white;
   margin: 14px 5%;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  justify-content: space-between;
+  color: white;
+  margin: 14px 5% 0 5%;
 }
 
 .project-container ul {
@@ -137,6 +155,7 @@ p {
   font-size: 11px;
   font-weight: 300;
 }
+
 .project-container a {
   border: rgba(255, 255, 255, 0.672) solid 2px;
   border-radius: 3px;
@@ -147,16 +166,16 @@ p {
   font-weight: 300;
   text-decoration: none;
   width: 70%;
-  padding: 10px ;
+  padding: 10px;
   margin: 0 5%;
   margin-bottom: 2.2em;
   transition: 1s;
 }
 
-.project-container a:hover{
+.project-container a:hover {
   border: #98dede solid 2px;
   color: #98dede;
-  box-shadow: 0px 0px 10px 2px #98dedeb1;
+  box-shadow: 0 0 10px 2px #98dedeb1;
 }
 
 .fa-arrow-right {
@@ -187,7 +206,7 @@ p {
   padding: 0 50px;
 }
 
-.color-box-container h3{
+.color-box-container h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 800;
@@ -274,7 +293,7 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.get-started-button:hover{
+.get-started-button:hover {
   background-color: #1a2236e1;
 }
 
@@ -286,34 +305,15 @@ footer {
   padding: 24px 0;
 }
 
-footer a {
-  border: none;
-  background-color: transparent;
-  margin: 25px 5% 35px 5%;
-  color: #92dcdc;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-}
-
 .fa-arrow-up-right-from-square {
   margin-left: 15px;
   font-size: 20px;
 }
 
-footer ul {
-  display: flex;
-  list-style: none;
-  font-size: 25px;
-  justify-content: space-between;
-  color: white;
-  margin: 14px 5% 0px 5%;
-}
-
 @media only screen and (min-width: 1000px) {
-  .about-boxes-grid{
-  margin: 0 5%;
-  display: grid;
-  grid-template-columns: auto auto;
-}
+  .about-boxes-grid {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
