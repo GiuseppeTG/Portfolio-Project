@@ -131,10 +131,10 @@ footer a {
 }
 
 footer ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
   font-size: 25px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   color: white;
   margin: 14px 5% 0 5%;
 }
