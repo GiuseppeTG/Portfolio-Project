@@ -252,7 +252,7 @@ footer ul {
 .text-box {
   height: 50px;
   margin-bottom: 8px;
-  border: #1a2236 solid 1px;
+  border: #060707 solid 1px;
   border-radius: 5px;
   padding: 16px;
   width: 100%;
@@ -276,7 +276,6 @@ textarea {
 }
 
 textarea::placeholder {
-  /* transform: translateY(-50px); */
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
