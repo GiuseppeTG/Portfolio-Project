@@ -108,6 +108,10 @@ footer a {
 
 /* Work section  */
 
+.work-section-container{
+  border: blue solid 2px;
+}
+
 .work-section-grid {
   display: grid;
   grid-template-columns: auto;
@@ -184,6 +188,10 @@ footer ul {
 
 /* About section */
 
+.about-section-container {
+  border: green solid 2px;
+}
+
 .cv-button {
   height: 50px;
   width: 100%;
@@ -243,6 +251,10 @@ footer ul {
 }
 
 /* Get started section */
+
+.get-started-section-container {
+  border: magenta solid 2px;
+}
 
 .section-info-container form {
   margin: 35px auto;
@@ -309,7 +321,61 @@ footer {
   font-size: 20px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
+
+  h1,
+  h2 {
+    font-size: 110px;
+  }
+
+/* headline section */
+  
+.headline-section-container {
+  /* border: red solid 2px; */
+  display: flex;
+}
+
+.headline-container {
+  /* border: green solid 2px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 90px 90px 260px 160px;
+  margin: 0;
+  background-image: url(/images/image-dots.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.headline-container .link-box {
+  height: 70px;
+  width: 50%;
+  font-size: 18px; 
+}
+
+.background-headline-container {
+  width: 50%;
+  background-image: url(images/headline-section-background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* border: goldenrod solid 2px; */
+}
+
+.background-separator {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
   .about-boxes-grid {
     margin: 0 5%;
     display: grid;
