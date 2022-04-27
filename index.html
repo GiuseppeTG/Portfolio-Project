@@ -168,8 +168,18 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!
       </p>
     <form action="https://formspree.io/f/xnqwodnj" method="POST">
-      <input class="text-box" type="text" id="user_name" name="user_name" placeholder="Your name" maxlength="30" required>
-      <input class="text-box" type="email" id="user_email" name="user_email" placeholder="Your email" required>
+      <div class="inputs-container">
+        <div class="user-name-container">
+          <label for="user_name">Your name</label>
+          <input class="text-box" type="text" id="user_name" name="user_name" placeholder="Your name" maxlength="30" required>
+        </div>
+        <div class="user-email-container">
+          <label for="user_email">Your email</label>
+          <input class="text-box" type="email" id="user_email" name="user_email" placeholder="Your email" required>
+        </div>
+      </div>
+      
+      <label for="user_comment">Message</label>
       <textarea name="user_comment" id="user_comment" placeholder="Enter a message here..." maxlength="500" required></textarea>
       <button class="get-started-button" type="submit" value="submit" >
         Start collaboration

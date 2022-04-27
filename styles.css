@@ -349,7 +349,8 @@ footer {
 
 .link-box {
   height: 70px;
-  width: 50%;
+  width: 254px;
+  padding: 30px;
   font-size: 18px; 
 }
 
@@ -408,7 +409,58 @@ footer {
   background-position: 100% 100%;
 }
 
+/* info section */
 
+.section-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 560px;
+}
+
+form label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #7D7C84;
+}
+
+.text-box::placeholder{
+  color: white;
+}
+
+textarea::placeholder {
+  color: white;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: space-evenly ;
+  margin-bottom: 16px;
+}
+
+.user-name-container {
+
+}
+
+.user-email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-container input {
+  width: 253px;
+  margin: 0;
+}
+
+.get-started-button {
+  height: 70px;
+  width: 50%;
+  border: none;
+  background-color: #1a2236;
+  margin: 32px 130px;
+  font-size: 18px;
+}
 
 
 
