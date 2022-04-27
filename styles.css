@@ -35,6 +35,10 @@ p {
   color: #1a2236;
 }
 
+label {
+  display: none;
+}
+
 .nav-menu {
   display: flex;
   justify-content: end;
@@ -108,11 +112,6 @@ footer a {
 
 /* Work section  */
 
-.work-section-grid {
-  display: grid;
-  grid-template-columns: auto;
-}
-
 .project-container {
   background-color: #1a2236;
   padding-bottom: 32px;
@@ -184,10 +183,6 @@ footer ul {
 
 /* About section */
 
-.about-section-container {
-  border: green solid 2px;
-}
-
 .cv-button {
   height: 50px;
   width: 100%;
@@ -247,10 +242,6 @@ footer ul {
 }
 
 /* Get started section */
-
-.get-started-section-container {
-  border: magenta solid 2px;
-}
 
 .section-info-container form {
   margin: 35px auto;
@@ -327,18 +318,21 @@ footer {
     font-size: 110px;
   }
 
-/* headline section */
+  .section-info-container {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   
 .headline-section-container {
-  /* border: red solid 2px; */
   display: flex;
+  margin:0;
+  padding: 0;
 }
 
 .headline-container {
-  /* border: green solid 2px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 50%;
   padding: 90px 90px 260px 160px;
   margin: 0;
@@ -359,7 +353,6 @@ footer {
   background-image: url(images/headline-section-background.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  /* border: goldenrod solid 2px; */
 }
 
 .background-separator {
@@ -368,18 +361,97 @@ footer {
 
 /* work section */
 
+.project-container {
+  background-color: transparent;
+  padding-bottom: 0;
+}
+
+
+.single-project-info {
+  display: none;
+}
+
 .work-section-container {
-  border: blue solid 2px;
+  margin:  210px 0 0 0;
+  padding: 0;
+}
+
+.container-1 {
+  display: flex;
+  height: 558;
 }
 
 .project-section-title {
-  border: green solid 2px;
+  width: 480px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-image: url(images/image-dots.png);
+  background-position: 105% 0%;
+  background-repeat: no-repeat;
+}
+
+.project-section-title h2{
+  transform: rotate(-90deg) translateX(-90px) translateY(-70px);
+}
+
+.project-section-title h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.project-1 {
+  padding:0;
+  margin:0;
+  height: auto;
+  width: 960px;
+}
+
+.container-2 {
+  width: 100%;
+  height: 815px;
+  display: flex;
+}
+
+
+.group-2-3 {
+  width: 975px;
+  padding-top: 80px;
+  background-image: url(images/image-geometry-2.png), url(images/figure-red.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 0%, 100% 100%;
+}
+
+.group-4-5{
+  width: 465px;
+  background-image: url(images/image-geometry-3.png);
+  background-repeat: no-repeat;
+  background-position: 100% 86%;
+}
+
+.project-2 {
+  width: 465px;
+}
+
+.project-3 {
+  width: 778px;
+}
+
+.container-3 {
+  background-image: url(images/figure-yellow.png), url(images/image-geometry-4.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 52.5% 0%, 0% 0%;
+}
+
+.project-6 {
+  margin-left: 799px;
+  width: 465px;
+  height: auto;
 }
 
 /* about section */
 
 .about-section-container {
-  border: red solid 2px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -388,7 +460,6 @@ footer {
 }
 
 .about-info-contaiener {
-  border: green solid 2px;
   margin: 0;
   width: 50%;
   padding-right: 80px;
@@ -399,7 +470,6 @@ footer {
 }
 
 .about-boxes-grid {
-  border: goldenrod solid 2px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
@@ -411,15 +481,24 @@ footer {
 
 /* info section */
 
-.section-info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 560px;
+.get-started-section-container {
+  width: 100%;
+  background-image: url(images/image-geometry-6.png), url(images/image-geometry-7.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% 0%, 100% 100%;
+  padding: 100px;
+  margin-top: 100px;
 }
 
+.get-started-section-container .section-info-container{
+  width: 621px;
+  margin: auto;
+  
+}
+
+
 form label {
+  display:block;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   color: #7D7C84;
@@ -435,12 +514,8 @@ textarea::placeholder {
 
 .inputs-container {
   display: flex;
-  justify-content: space-evenly ;
+  justify-content: space-between ;
   margin-bottom: 16px;
-}
-
-.user-name-container {
-
 }
 
 .user-email-container {
