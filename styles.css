@@ -13,6 +13,7 @@ header {
   position: fixed;
   top: 0;
   background-color: #fff;
+  z-index: 100;
 }
 
 main {
@@ -296,10 +297,12 @@ textarea::placeholder {
   font-weight: 500;
   color: white;
   cursor: pointer;
+  transition: 2s;
 }
 
 .get-started-button:hover {
   background-color: #1a2236e1;
+  font-size: 1.5em;
 }
 
 /* Social Media Section */
