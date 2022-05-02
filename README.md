@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-Link to the online version: https://giuseppetg.github.io/Giuseppe-Portfolio/
+For opening the online version of this project, go to: https://giuseppetg.github.io/Giuseppe-Portfolio/
 
 To run this project locally on your computer clone using "git clone" command with this repo url.
 Open the file in your code editor. 
