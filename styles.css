@@ -84,6 +84,15 @@ header {
   left: 0;
 }
 
+.full-screen {
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  background-color: white;
+}
+
 /* MAIN */
 
 main {
@@ -163,7 +172,7 @@ footer a {
 
 .background-separator {
   height: 150px;
-  background-image: url("images/figures-big1.png");
+  background-image: url('images/figures-big1.png');
 }
 
 /* Work section  */
@@ -368,7 +377,6 @@ footer {
 }
 
 @media only screen and (min-width: 1440px) {
-
   header {
     min-height: 100px;
     align-items: center;
@@ -384,7 +392,7 @@ footer {
     align-items: center;
   }
 
-  .nav-menu{
+  .nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -394,9 +402,6 @@ footer {
     left: 0;
     top: 20px;
   }
-
-  
-
 
   main {
     width: 1440px;
@@ -542,7 +547,8 @@ footer {
   .group-2-3 {
     width: 975px;
     padding-top: 80px;
-    background-image: url(images/image-geometry-2.png), url(images/figure-red.png);
+    background-image: url(images/image-geometry-2.png),
+      url(images/figure-red.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 0%, 100% 100%;
   }
@@ -563,7 +569,8 @@ footer {
   }
 
   .container-3 {
-    background-image: url(images/figure-yellow.png), url(images/image-geometry-4.png);
+    background-image: url(images/figure-yellow.png),
+      url(images/image-geometry-4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 52.5% 0%, 0% 0%;
   }
@@ -608,7 +615,8 @@ footer {
 
   .get-started-section-container {
     width: 100%;
-    background-image: url(images/image-geometry-6.png), url(images/image-geometry-7.png);
+    background-image: url(images/image-geometry-6.png),
+      url(images/image-geometry-7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 0%, 100% 100%;
     padding: 100px;
