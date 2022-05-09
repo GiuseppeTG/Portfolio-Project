@@ -14,24 +14,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;300;400;500;800&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">  
   <script src="https://kit.fontawesome.com/d1333a485b.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
   <header>
-    <nav class="nav-mobile">
-      <button class="menu-button" type="button">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
-
-    <nav class="nav-laptop">
-      <ul>
-        <li><a href="#hello">Hello</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#hello" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
   </header>
   

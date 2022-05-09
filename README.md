@@ -29,6 +29,9 @@ Browser (tested with Chrome)
 - Twitter: [@giusetomasini](https://twitter.com/giusetomasini)
 - LinkedIn: [Giuseppe Tomasini](https://www.linkedin.com/in/giuseppe-tomasini-67ba101a8/)
 
+## Contributors
+- GitHub: [@learnwithalfred](https://github.com/learnwithalfred)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!

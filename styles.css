@@ -8,13 +8,138 @@ body {
   font-size: 14px;
 }
 
+/* NAVBAR */
+
 header {
-  width: 100%;
+  background-image: url(/images/figures-small1.png);
+  background-repeat: no-repeat;
+  background-color: white;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  left: 0;
+  width: 100%;
   z-index: 100;
 }
+
+header.full-screen {
+  background-image: url(images/Image-top-menu.png), url(images/image-bottom-menu.png), url(images/image-dots-menu.png), url(images/image-dots-menu.png);
+  background-repeat: no-repeat, repeat-x, no-repeat;
+  background-position: 0% 0%, 0% 100%, 80% 15%, 15% 80%;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+footer a {
+  border: none;
+  background-color: transparent;
+  margin: 25px 5% 35px 5%;
+  color: #92dcdc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.link-box a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.project-container a {
+  border: rgba(255, 255, 255, 0.672) solid 2px;
+  border-radius: 3px;
+  color: white;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  width: 70%;
+  padding: 10px;
+  margin: 0 5%;
+  margin-bottom: 2.2em;
+  transition: 1s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  min-height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #262626;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 75px;
+  flex-direction: column;
+  background-color: transparent;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #1a2236;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+  padding: 100px 0;
+}
+
+.full-screen {
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  background-color: white;
+}
+
+/* MAIN */
 
 main {
   margin-top: 120px;
@@ -38,27 +163,6 @@ p {
 
 label {
   display: none;
-}
-
-.nav-laptop {
-  display: none;
-}
-
-.nav-mobile {
-  display: flex;
-  justify-content: end;
-  background-image: url("images/figures-small1.png");
-  background-repeat: no-repeat;
-  height: 75px;
-}
-
-.menu-button {
-  border: none;
-  font-size: 1.7em;
-  margin: 20px 40px;
-  color: #1a2236;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .section-info-container {
@@ -90,27 +194,6 @@ label {
   transition: 1s;
 }
 
-footer a {
-  border: none;
-  background-color: transparent;
-  margin: 25px 5% 35px 5%;
-  color: #92dcdc;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-footer li a {
-  font-size: 24px;
-}
-
-.link-box a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-
 .link-box:hover {
   background-color: #1a2236e1;
   font-size: 1.2rem;
@@ -118,7 +201,7 @@ footer li a {
 
 .background-separator {
   height: 150px;
-  background-image: url("images/figures-big1.png");
+  background-image: url('images/figures-big1.png');
 }
 
 /* Work section  */
@@ -165,22 +248,6 @@ footer ul {
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
   font-weight: 300;
-}
-
-.project-container a {
-  border: rgba(255, 255, 255, 0.672) solid 2px;
-  border-radius: 3px;
-  color: white;
-  background-color: transparent;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: none;
-  width: 70%;
-  padding: 10px;
-  margin: 0 5%;
-  margin-bottom: 2.2em;
-  transition: 1s;
 }
 
 .project-container a:hover {
@@ -276,7 +343,6 @@ footer ul {
 }
 
 textarea {
-  height: fit-content;
   min-height: 150px;
   border: #1a2236 solid 1px;
   border-radius: 5px;
@@ -323,22 +389,35 @@ footer {
 }
 
 @media only screen and (min-width: 1440px) {
-  main {
-    width: 1440px;
-    margin: auto;
+  header {
+    min-height: 100px;
+    align-items: center;
   }
 
-  .nav-mobile {
+  .hamburger {
     display: none;
   }
 
-  .nav-laptop {
-    height: 100px;
+  .navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    background-image: url("images/figures-small1.png");
-    background-repeat: no-repeat;
+    align-items: center;
+    font-size: 18px;
+    gap: 100px;
+    left: 0;
+    top: 22px;
+  }
+
+  main {
+    width: 1440px;
+    margin: auto;
   }
 
   footer ul {
@@ -346,27 +425,9 @@ footer {
     padding: 0;
   }
 
-  .nav-laptop ul {
-    display: flex;
-    list-style: none;
-  }
-
   footer a {
     margin: 0 50px;
     padding: 0;
-  }
-
-  .nav-laptop a {
-    text-decoration: none;
-    color: #1a2236;
-    margin: 0 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
-  .nav-laptop a:hover {
-    text-decoration: underline;
   }
 
   h1,
@@ -455,7 +516,6 @@ footer {
 
   .container-1 {
     display: flex;
-    height: 558;
   }
 
   .project-section-title {
@@ -498,7 +558,9 @@ footer {
   .group-2-3 {
     width: 975px;
     padding-top: 80px;
-    background-image: url(images/image-geometry-2.png), url(images/figure-red.png);
+    background-image:
+      url(images/image-geometry-2.png),
+      url(images/figure-red.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 0%, 100% 100%;
   }
@@ -519,7 +581,9 @@ footer {
   }
 
   .container-3 {
-    background-image: url(images/figure-yellow.png), url(images/image-geometry-4.png);
+    background-image:
+      url(images/figure-yellow.png),
+      url(images/image-geometry-4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 52.5% 0%, 0% 0%;
   }
@@ -564,7 +628,9 @@ footer {
 
   .get-started-section-container {
     width: 100%;
-    background-image: url(images/image-geometry-6.png), url(images/image-geometry-7.png);
+    background-image:
+      url(images/image-geometry-6.png),
+      url(images/image-geometry-7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 0%, 100% 100%;
     padding: 100px;
