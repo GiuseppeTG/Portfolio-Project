@@ -6,8 +6,8 @@ const body = document.querySelector('body');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
-  header.classList.add('full-screen');
-  body.classList.add('no-scroll');
+  header.classList.toggle('full-screen');
+  body.classList.toggle('no-scroll');
 });
 
 document.querySelectorAll('.nav-link').forEach((n) =>

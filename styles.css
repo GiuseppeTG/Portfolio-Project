@@ -11,7 +11,9 @@ body {
 /* NAVBAR */
 
 header {
-  background-color: #262626;
+  background-image: url(/images/figures-small1.png);
+  background-repeat: no-repeat;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,12 +21,18 @@ header {
   z-index: 100;
 }
 
+header.full-screen{
+  background-image: url(images/Image-top-menu.png), url(images/image-bottom-menu.png), url(images/image-dots-menu.png), url(images/image-dots-menu.png);
+  background-repeat: no-repeat, repeat-x, no-repeat;
+  background-position:0% 0%, 0% 100%, 80% 15%, 15% 80%;
+}
+
 .navbar li {
   list-style: none;
 }
 
 .navbar a {
-  color: white;
+  color: #262626;;
   text-decoration: none;
 }
 
@@ -33,7 +41,7 @@ header {
 }
 
 .navbar {
-  min-height: 70px;
+  min-height: 75px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,7 +55,7 @@ header {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #262626;;
 }
 
 .hamburger {
@@ -57,9 +65,11 @@ header {
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -67,13 +77,15 @@ header {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 70px;
-  gap: 0;
+  top: 75px;
   flex-direction: column;
-  background-color: #262626;
+  background-color: transparent;
   width: 100%;
   text-align: center;
   transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #1a2236;
 }
 
 .nav-item {
@@ -82,6 +94,7 @@ header {
 
 .nav-menu.active {
   left: 0;
+  padding: 100px 0;
 }
 
 .full-screen {
@@ -400,7 +413,7 @@ footer {
     font-size: 18px;
     gap: 100px;
     left: 0;
-    top: 20px;
+    top: 22px;
   }
 
   main {
