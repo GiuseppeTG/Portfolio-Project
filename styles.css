@@ -420,32 +420,6 @@ footer {
 
 @media only screen and (min-width: 1440px) {
 
-  /* header {
-    min-height: 100px;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    gap: 100px;
-    left: 0;
-    top: 22px;
-  } */
-
   main {
     width: 1440px;
     margin: auto;
