@@ -21,19 +21,52 @@ header {
   z-index: 100;
 }
 
-header.full-screen{
+header.full-screen {
   background-image: url(images/Image-top-menu.png), url(images/image-bottom-menu.png), url(images/image-dots-menu.png), url(images/image-dots-menu.png);
   background-repeat: no-repeat, repeat-x, no-repeat;
-  background-position:0% 0%, 0% 100%, 80% 15%, 15% 80%;
+  background-position: 0% 0%, 0% 100%, 80% 15%, 15% 80%;
 }
 
 .navbar li {
   list-style: none;
 }
 
-.navbar a {
-  color: #262626;;
+footer a {
+  border: none;
+  background-color: transparent;
+  margin: 25px 5% 35px 5%;
+  color: #92dcdc;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   text-decoration: none;
+}
+
+.navbar a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.link-box a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.project-container a {
+  border: rgba(255, 255, 255, 0.672) solid 2px;
+  border-radius: 3px;
+  color: white;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  width: 70%;
+  padding: 10px;
+  margin: 0 5%;
+  margin-bottom: 2.2em;
+  transition: 1s;
 }
 
 .navbar a:hover {
@@ -55,7 +88,7 @@ header.full-screen{
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #262626;;
+  background-color: #262626;
 }
 
 .hamburger {
@@ -161,23 +194,6 @@ label {
   transition: 1s;
 }
 
-footer a {
-  border: none;
-  background-color: transparent;
-  margin: 25px 5% 35px 5%;
-  color: #92dcdc;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.link-box a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-
 .link-box:hover {
   background-color: #1a2236e1;
   font-size: 1.2rem;
@@ -232,22 +248,6 @@ footer ul {
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
   font-weight: 300;
-}
-
-.project-container a {
-  border: rgba(255, 255, 255, 0.672) solid 2px;
-  border-radius: 3px;
-  color: white;
-  background-color: transparent;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: none;
-  width: 70%;
-  padding: 10px;
-  margin: 0 5%;
-  margin-bottom: 2.2em;
-  transition: 1s;
 }
 
 .project-container a:hover {
@@ -343,7 +343,6 @@ footer ul {
 }
 
 textarea {
-  height: fit-content;
   min-height: 150px;
   border: #1a2236 solid 1px;
   border-radius: 5px;
@@ -517,7 +516,6 @@ footer {
 
   .container-1 {
     display: flex;
-    height: 558;
   }
 
   .project-section-title {
@@ -560,7 +558,8 @@ footer {
   .group-2-3 {
     width: 975px;
     padding-top: 80px;
-    background-image: url(images/image-geometry-2.png),
+    background-image:
+      url(images/image-geometry-2.png),
       url(images/figure-red.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 0%, 100% 100%;
@@ -582,7 +581,8 @@ footer {
   }
 
   .container-3 {
-    background-image: url(images/figure-yellow.png),
+    background-image:
+      url(images/figure-yellow.png),
       url(images/image-geometry-4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 52.5% 0%, 0% 0%;
@@ -628,7 +628,8 @@ footer {
 
   .get-started-section-container {
     width: 100%;
-    background-image: url(images/image-geometry-6.png),
+    background-image:
+      url(images/image-geometry-6.png),
       url(images/image-geometry-7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 0%, 100% 100%;

@@ -10,11 +10,9 @@ hamburger.addEventListener('click', () => {
   body.classList.toggle('no-scroll');
 });
 
-document.querySelectorAll('.nav-link').forEach((n) =>
-  n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-    header.classList.remove('full-screen');
-    body.classList.remove('no-scroll');
-  })
-);
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+  header.classList.remove('full-screen');
+  body.classList.remove('no-scroll');
+}));
