@@ -404,7 +404,7 @@ textarea::placeholder {
   flex-direction: column;
   background-color: white;
   width: 90%;
-  max-width: 1080px;
+  max-width: 550px;
   padding: 5%;
 }
 
@@ -414,13 +414,20 @@ textarea::placeholder {
   align-items: center;
 }
 
+#modal-project-name {
+  color: #1A2236;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
 .close-button {
   cursor: pointer;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 0;
-  font-size: 30px;
+  font-size: 40px;
   transform: translateY(-10px) translateX(4px);
 }
 
@@ -428,9 +435,9 @@ textarea::placeholder {
   display: flex;
   list-style: none;
   gap: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
   margin: 18px 0;
 }
 
@@ -476,34 +483,38 @@ textarea::placeholder {
 }
 
 .modal-container p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
   line-height: 27px;
   margin-bottom: 15px;
 }
 
 .modal-link-container {
-  margin: 50px 0;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: auto;
-  gap: 30px;
+  gap: 20px;
 }
 
 .modal-link {
   text-decoration: none;
-  width: 246px;
+  width: 200px;
   text-align: center;
-  padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  font-size: 18px;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   border: black solid 1px;
+  transition: 1s;
+}
+
+.modal-link:hover {
+  color: white;
+  background-color: #1a2236; 
 }
 
 .modal-link a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 /* Social Media Section */
@@ -551,10 +562,26 @@ footer {
     flex-direction: column;
     background-color: white;
     width: 80%;
-    max-width: 450px;
-    
+    max-width: 500px;
     padding: 5%;
   }
+
+  #modal-project-name {
+    color: #1A2236;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  .close-button {
+    font-size: 40px;
+    transform: translateY(-20px) translateX(4px);
+  }
+
+  .modal-link-container {   
+    grid-template-columns: auto auto;
+  }
+  
 }
 
 @media only screen and (min-width: 1440px) {
@@ -821,6 +848,19 @@ footer {
     margin: 32px 130px;
     font-size: 18px;
   }
+
+  /* modal */
+
+  .modal-container { 
+    max-width: 600px;
+  }
+
+  .close-button {
+    font-size: 50px;
+    transform: translateY(-30px) translateX(4px);
+  }
+
+  /* footer */
 
   footer {
     display: flex;

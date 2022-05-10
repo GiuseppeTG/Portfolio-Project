@@ -5,37 +5,49 @@ const projects = [
     projectTitle: 'Project #0',
     description: 'project#0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     images: ['images/project-1.jpg', 'images/project-4.jpg', 'images/project-3.jpg', 'images/project-2.jpg'],
-    languages: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     projectTitle: 'Project #1',
     description: 'project#1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     images: ['images/project-2.jpg', 'images/project-4.jpg', 'images/project-3.jpg', 'images/project-2.jpg'],
-    languages: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     projectTitle: 'Project #2',
     description: 'project#2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     images: ['images/project-3.jpg', 'images/project-4.jpg', 'images/project-3.jpg', 'images/project-2.jpg'],
-    languages: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     projectTitle: 'Project #3',
     description: 'project#3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     images: ['images/project-4.jpg', 'images/project-4.jpg', 'images/project-3.jpg', 'images/project-2.jpg'],
-    languages: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     projectTitle: 'Project #4',
     description: 'project#4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     images: ['images/project-5.jpg', 'images/project-4.jpg', 'images/project-3.jpg', 'images/project-2.jpg'],
-    languages: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     projectTitle: 'Project #5',
     description: 'project#5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
     images: ['images/project-6.jpg', 'images/project-4.jpg', 'images/project-3.jpg', 'images/project-2.jpg'],
-    languages: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    languages: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
 ];
 
@@ -47,7 +59,6 @@ const navMenu = document.querySelector('.nav-menu');
 const header = document.querySelector('header');
 const body = document.querySelector('body');
 const modal = document.querySelector('#modal');
-// const closeModalButton = document.querySelector('.close-button');
 
 
 // mobile menu
@@ -84,6 +95,7 @@ function openModal(num) {
     document.getElementById('foto').src = projects[num].images[0];
     document.getElementById('modal-img-preview').innerHTML = imagesList;
     document.getElementById('modal-project-description').innerHTML = projects[num].description;
+    document.getElementById('modal-project-live-version').href = projects[num].linkToLiveVersion;
 
     modal.classList.add('active');
 }
