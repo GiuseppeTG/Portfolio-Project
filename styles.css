@@ -375,6 +375,134 @@ textarea::placeholder {
   font-size: 1.5em;
 }
 
+/* Modal window */
+
+.overlay {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.529);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  transform: scale(0);
+  transition: 0.3s;
+  z-index: 101;
+}
+
+.overlay.active {
+  transform: translate(-50%, -50%) scale(1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  max-width: 1080px;
+  padding: 5%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 30px;
+  transform: translateY(-10px) translateX(4px);
+}
+
+.modal-container ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 11px;
+  margin: 18px 0;
+}
+
+.modal-container ul li {
+  border: 1px black solid;
+  padding: 4px 6px;
+}
+
+.modal-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+}
+
+.modal-img-container img {
+  width: 100%;
+}
+
+#modal-img-preview {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#modal-img-preview img {
+  display: block;
+  width: 25%;
+}
+
+.modal-project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.p-container {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.modal-container p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.modal-link-container {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+}
+
+.modal-link {
+  text-decoration: none;
+  width: 246px;
+  text-align: center;
+  padding: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  border: black solid 1px;
+}
+
+.modal-link a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
 /* Social Media Section */
 
 footer {

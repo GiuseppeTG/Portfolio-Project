@@ -84,10 +84,9 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">See this project<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="javascript:openModal(0)">See this project<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
-
       </div>
 
 
@@ -104,7 +103,7 @@
                   <li>Ruby on Rails</li>
                   <li>JavaScript</li>
                 </ul>
-                <a href="#">See this project<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="javascript:openModal(1)">See this project<i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             
@@ -118,7 +117,7 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">See this project<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="javascript:openModal(2)">See this project<i class="fa-solid fa-arrow-right"></i></a>
             </div> 
           </div>
         </div>
@@ -134,7 +133,7 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">See this project<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="javascript:openModal(3)">See this project<i class="fa-solid fa-arrow-right"></i></a>
             </div> 
           </div>
 
@@ -148,7 +147,7 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">See this project<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="javascript:openModal(4)">See this project<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -168,7 +167,7 @@
               <li>Ruby on Rails</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">See this project<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="javascript:openModal(5)">See this project<i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -264,5 +263,53 @@
           </ul>
       </footer>
   </main>
+
+  <div id="modal" class="overlay">
+    
+    <div class="modal-container">
+      <div class="modal-project-presentation">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h3 id="modal-project-name">Project #0</h3>
+          </div>
+          <button onclick="closeModal()" class="close-button">&times;</button>
+        </div>
+        <ul id="modal-languages">
+          <li>HTML/CSS</li>
+          <li>Ruby on Rails</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <div class="modal-img-container">
+          <img id="foto" class="modal-project-image" src="" alt="projectX-selected">
+          <div id="modal-img-preview">
+            <img src="" alt="projectX1">
+            <img src="" alt="projectX2">
+            <img src="" alt="projectX3">
+            <img src="" alt="projectX4">
+          </div>
+        </div>
+      </div>
+        
+
+
+      <div class="modal-project-info">
+        <div class="p-container">
+          <p id="modal-project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque voluptates, exercitationem, aspernatur qui vel voluptatibus impedit debitis ullam, distinctio perspiciatis est! Sit sed necessitatibus voluptatem blanditiis velit unde amet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque voluptates, exercitationem, aspernatur qui vel voluptatibus impedit debitis ullam, distinctio perspiciatis est! Sit sed necessitatibus voluptatem blanditiis velit unde amet?
+          </p> 
+        </div>
+                 
+
+        <div class="modal-link-container">
+          <div class="modal-link"><a href="#">See live <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="modal-link"><a href="#">See source <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
