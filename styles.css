@@ -22,7 +22,9 @@ header {
 }
 
 header.full-screen {
-  background-image: url(images/Image-top-menu.png), url(images/image-bottom-menu.png), url(images/image-dots-menu.png), url(images/image-dots-menu.png);
+  background-image: url(images/Image-top-menu.png),
+    url(images/image-bottom-menu.png), url(images/image-dots-menu.png),
+    url(images/image-dots-menu.png);
   background-repeat: no-repeat, repeat-x, no-repeat;
   background-position: 0% 0%, 0% 100%, 80% 15%, 15% 80%;
 }
@@ -426,7 +428,8 @@ textarea::placeholder {
   display: flex;
   list-style: none;
   gap: 10px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   font-size: 11px;
   margin: 18px 0;
 }
@@ -473,7 +476,8 @@ textarea::placeholder {
 }
 
 .modal-container p {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 15px;
@@ -491,7 +495,8 @@ textarea::placeholder {
   width: 246px;
   text-align: center;
   padding: 20px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   font-size: 18px;
   border: black solid 1px;
 }
@@ -500,8 +505,6 @@ textarea::placeholder {
   text-decoration: none;
   color: black;
 }
-
-
 
 /* Social Media Section */
 
@@ -517,7 +520,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  
   header {
     min-height: 100px;
     align-items: center;
@@ -544,10 +546,18 @@ footer {
     top: 22px;
   }
 
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    max-width: 450px;
+    
+    padding: 5%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-
   main {
     width: 1440px;
     margin: auto;
@@ -691,8 +701,7 @@ footer {
   .group-2-3 {
     width: 975px;
     padding-top: 80px;
-    background-image:
-      url(images/image-geometry-2.png),
+    background-image: url(images/image-geometry-2.png),
       url(images/figure-red.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 0%, 100% 100%;
@@ -714,8 +723,7 @@ footer {
   }
 
   .container-3 {
-    background-image:
-      url(images/figure-yellow.png),
+    background-image: url(images/figure-yellow.png),
       url(images/image-geometry-4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 52.5% 0%, 0% 0%;
@@ -761,8 +769,7 @@ footer {
 
   .get-started-section-container {
     width: 100%;
-    background-image:
-      url(images/image-geometry-6.png),
+    background-image: url(images/image-geometry-6.png),
       url(images/image-geometry-7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 0%, 100% 100%;
