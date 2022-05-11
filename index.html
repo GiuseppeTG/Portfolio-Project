@@ -258,7 +258,11 @@
             aspernatur, ipsam autem fuga minima libero dolor accusantium
             corporis possimus quaerat repellat harum distinctio!
           </p>
-          <form id="form" action="https://f-ormspree.io/f/xnqwodnj" method="P-OST">
+          <form
+            id="form"
+            action="https://formspree.io/f/xnqwodnj"
+            method="POST"
+          >git 
             <div class="inputs-container">
               <div class="user-name-container">
                 <label for="user-name">Your name</label>
@@ -269,7 +273,6 @@
                   name="user-name"
                   placeholder="Your name"
                   maxlength="30"
-                  required
                 />
               </div>
               <div class="user-email-container">
@@ -280,9 +283,7 @@
                   id="user-email"
                   name="user_email"
                   placeholder="Your email"
-                  required
                   type="email"
-                  pattern="[a-z0-9_\-\.]+@[a-z]+[\.][a-z]{2,3}"
                 />
               </div>
             </div>
@@ -293,8 +294,8 @@
               id="user_comment"
               placeholder="Enter a message here..."
               maxlength="500"
-              required
             ></textarea>
+            <p id="error-message"></p>
             <button class="get-started-button" type="submit" value="submit">
               Start collaboration
             </button>
@@ -332,7 +333,9 @@
             <div class="modal-title">
               <h3 id="modal-project-name">Project #0</h3>
             </div>
-            <button onclick="closeModal(1)" class="close-button" type="button">&times;</button>
+            <button onclick="closeModal(1)" class="close-button" type="button">
+              &times;
+            </button>
           </div>
           <ul id="modal-languages">
             <li>HTML/CSS</li>
@@ -372,10 +375,14 @@
 
           <div class="modal-link-container">
             <div class="modal-link">
-              <a id="modal-project-live" href="#">See live <i class="fa-solid fa-arrow-right"></i></a>
+              <a id="modal-project-live" href="#"
+                >See live <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
             <div class="modal-link">
-              <a id="modal-project-source" href="#">See source <i class="fa-solid fa-arrow-right"></i></a>
+              <a id="modal-project-source" href="#"
+                >See source <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
