@@ -22,8 +22,10 @@ header {
 }
 
 header.full-screen {
-  background-image: url(images/Image-top-menu.png),
-    url(images/image-bottom-menu.png), url(images/image-dots-menu.png),
+  background-image:
+    url(images/Image-top-menu.png),
+    url(images/image-bottom-menu.png),
+    url(images/image-dots-menu.png),
     url(images/image-dots-menu.png);
   background-repeat: no-repeat, repeat-x, no-repeat;
   background-position: 0% 0%, 0% 100%, 80% 15%, 15% 80%;
@@ -31,6 +33,7 @@ header.full-screen {
 
 .navbar li {
   list-style: none;
+  margin-bottom: 80px;
 }
 
 footer a {
@@ -53,6 +56,11 @@ footer a {
   font-weight: 500;
   color: white;
   text-decoration: none;
+}
+
+.modal-link a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-container a {
@@ -387,7 +395,6 @@ textarea::placeholder {
   height: 100vh;
   position: absolute;
   transform: scale(0);
-  transition: 0.3s;
   z-index: 101;
 }
 
@@ -415,7 +422,7 @@ textarea::placeholder {
 }
 
 #modal-project-name {
-  color: #1A2236;
+  color: #1a2236;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -509,12 +516,7 @@ textarea::placeholder {
 
 .modal-link:hover {
   color: white;
-  background-color: #1a2236; 
-}
-
-.modal-link a {
-  text-decoration: none;
-  color: inherit;
+  background-color: #1a2236;
 }
 
 /* Social Media Section */
@@ -567,7 +569,7 @@ footer {
   }
 
   #modal-project-name {
-    color: #1A2236;
+    color: #1a2236;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -578,10 +580,9 @@ footer {
     transform: translateY(-20px) translateX(4px);
   }
 
-  .modal-link-container {   
+  .modal-link-container {
     grid-template-columns: auto auto;
   }
-  
 }
 
 @media only screen and (min-width: 1440px) {
@@ -728,7 +729,8 @@ footer {
   .group-2-3 {
     width: 975px;
     padding-top: 80px;
-    background-image: url(images/image-geometry-2.png),
+    background-image:
+      url(images/image-geometry-2.png),
       url(images/figure-red.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 0%, 100% 100%;
@@ -750,7 +752,8 @@ footer {
   }
 
   .container-3 {
-    background-image: url(images/figure-yellow.png),
+    background-image:
+      url(images/figure-yellow.png),
       url(images/image-geometry-4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 52.5% 0%, 0% 0%;
@@ -796,7 +799,8 @@ footer {
 
   .get-started-section-container {
     width: 100%;
-    background-image: url(images/image-geometry-6.png),
+    background-image:
+      url(images/image-geometry-6.png),
       url(images/image-geometry-7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 0%, 100% 100%;
@@ -851,7 +855,7 @@ footer {
 
   /* modal */
 
-  .modal-container { 
+  .modal-container {
     max-width: 600px;
   }
 
