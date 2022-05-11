@@ -457,7 +457,8 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  width: 100%;
+  width: 70%;
+  margin: auto;
 }
 
 .modal-img-container img {
@@ -497,7 +498,7 @@ textarea::placeholder {
 }
 
 .modal-link-container {
-  margin: 50px auto;
+  margin: 20px auto 0 auto;
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
@@ -530,6 +531,16 @@ footer {
 .fa-arrow-up-right-from-square {
   margin-left: 15px;
   font-size: 20px;
+}
+
+@media only screen and (min-width: 376px) {
+  .modal-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
