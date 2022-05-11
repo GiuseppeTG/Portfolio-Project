@@ -490,6 +490,11 @@ textarea::placeholder {
   overflow-y: auto;
 }
 
+#error-message {
+  font-size: 12px;
+  color: red;
+}
+
 .modal-container p {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;

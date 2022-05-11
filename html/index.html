@@ -7,7 +7,7 @@
 
     <title>Giuseppe's Portfolio</title>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,7 @@
       src="https://kit.fontawesome.com/d1333a485b.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js" defer></script>
+    <script src="/js/script.js" defer></script>
   </head>
 
   <body>
@@ -78,7 +78,7 @@
 
           <div class="project-container project-1">
             <img
-              src="images/project-1.jpg"
+              src="../images/project-1.jpg"
               alt="Hands typing on a macbook pro 13'', a notebook, an orange, a pen and a smartphone"
             />
 
@@ -101,7 +101,7 @@
             <div class="project-container project-2">
               <img
                 class="project"
-                src="images/project-2.jpg"
+                src="../images/project-2.jpg"
                 alt="macbook pro 16 frontal view"
               />
 
@@ -120,7 +120,7 @@
 
             <div class="project-container project-3">
               <img
-                src="images/project-3.jpg"
+                src="../images/project-3.jpg"
                 alt="macbook pro 16 frontal view and a smartphone"
               />
 
@@ -140,7 +140,7 @@
 
           <div class="group-4-5">
             <div class="project-container project-4">
-              <img src="images/project-4.jpg" alt="macbook pro 16" />
+              <img src="../images/project-4.jpg" alt="macbook pro 16" />
 
               <div class="single-project-info">
                 <h3>Project name goes here</h3>
@@ -157,7 +157,7 @@
 
             <div class="project-container project-5">
               <img
-                src="images/project-5.jpg"
+                src="../images/project-5.jpg"
                 alt="macbook pro 16 standing on its corner"
               />
 
@@ -180,7 +180,7 @@
           <div class="project-container project-6">
             <img
               class="project-image"
-              src="images/project-6.jpg"
+              src="../images/project-6.jpg"
               alt="macbook pro 16 with smartphone"
             />
 
@@ -258,29 +258,32 @@
             aspernatur, ipsam autem fuga minima libero dolor accusantium
             corporis possimus quaerat repellat harum distinctio!
           </p>
-          <form action="https://formspree.io/f/xnqwodnj" method="POST">
+          <form
+            id="form"
+            action="https://formspree.io/f/xnqwodnj"
+            method="POST"
+          >
             <div class="inputs-container">
               <div class="user-name-container">
-                <label for="user_name">Your name</label>
+                <label for="user-name">Your name</label>
                 <input
                   class="text-box"
                   type="text"
-                  id="user_name"
-                  name="user_name"
+                  id="user-name"
+                  name="user-name"
                   placeholder="Your name"
                   maxlength="30"
-                  required
                 />
               </div>
               <div class="user-email-container">
-                <label for="user_email">Your email</label>
+                <label for="user-email">Your email</label>
+                <small id="email-error"></small>
                 <input
                   class="text-box"
-                  type="email"
-                  id="user_email"
+                  id="user-email"
                   name="user_email"
                   placeholder="Your email"
-                  required
+                  type="email"
                 />
               </div>
             </div>
@@ -291,8 +294,8 @@
               id="user_comment"
               placeholder="Enter a message here..."
               maxlength="500"
-              required
             ></textarea>
+            <p id="error-message"></p>
             <button class="get-started-button" type="submit" value="submit">
               Start collaboration
             </button>
@@ -330,7 +333,9 @@
             <div class="modal-title">
               <h3 id="modal-project-name">Project #0</h3>
             </div>
-            <button onclick="closeModal(1)" class="close-button" type="button">&times;</button>
+            <button onclick="closeModal(1)" class="close-button" type="button">
+              &times;
+            </button>
           </div>
           <ul id="modal-languages">
             <li>HTML/CSS</li>
@@ -342,14 +347,14 @@
             <img
               id="foto"
               class="modal-project-image"
-              src="images/project-1.jpg"
+              src="../images/project-1.jpg"
               alt="projectX-selected"
             />
             <div id="modal-img-preview">
-              <img src="images/project-1.jpg" alt="projectX1" />
-              <img src="images/project-1.jpg" alt="projectX2" />
-              <img src="images/project-1.jpg" alt="projectX3" />
-              <img src="images/project-1.jpg" alt="projectX4" />
+              <img src="../images/project-1.jpg" alt="projectX1" />
+              <img src="../images/project-1.jpg" alt="projectX2" />
+              <img src="../images/project-1.jpg" alt="projectX3" />
+              <img src="../images/project-1.jpg" alt="projectX4" />
             </div>
           </div>
         </div>
@@ -370,10 +375,14 @@
 
           <div class="modal-link-container">
             <div class="modal-link">
-              <a id="modal-project-live" href="#">See live <i class="fa-solid fa-arrow-right"></i></a>
+              <a id="modal-project-live" href="#"
+                >See live <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
             <div class="modal-link">
-              <a id="modal-project-source" href="#">See source <i class="fa-solid fa-arrow-right"></i></a>
+              <a id="modal-project-source" href="#"
+                >See source <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
