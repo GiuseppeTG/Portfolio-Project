@@ -258,29 +258,31 @@
             aspernatur, ipsam autem fuga minima libero dolor accusantium
             corporis possimus quaerat repellat harum distinctio!
           </p>
-          <form action="https://formspree.io/f/xnqwodnj" method="POST">
+          <form id="form" action="https://f-ormspree.io/f/xnqwodnj" method="P-OST">
             <div class="inputs-container">
               <div class="user-name-container">
-                <label for="user_name">Your name</label>
+                <label for="user-name">Your name</label>
                 <input
                   class="text-box"
                   type="text"
-                  id="user_name"
-                  name="user_name"
+                  id="user-name"
+                  name="user-name"
                   placeholder="Your name"
                   maxlength="30"
                   required
                 />
               </div>
               <div class="user-email-container">
-                <label for="user_email">Your email</label>
+                <label for="user-email">Your email</label>
+                <small id="email-error"></small>
                 <input
                   class="text-box"
-                  type="email"
-                  id="user_email"
+                  id="user-email"
                   name="user_email"
                   placeholder="Your email"
                   required
+                  type="email"
+                  pattern="[a-z0-9_\-\.]+@[a-z]+[\.][a-z]{2,3}"
                 />
               </div>
             </div>

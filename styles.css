@@ -346,6 +346,7 @@ footer ul {
   width: 100%;
 }
 
+
 .text-box::placeholder {
   transform: translateY(-13px);
   font-family: 'Poppins', sans-serif;

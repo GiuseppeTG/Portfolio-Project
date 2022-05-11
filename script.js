@@ -65,6 +65,7 @@ const header = document.querySelector('header');
 const body = document.querySelector('body');
 const modal = document.querySelector('#modal');
 
+
 // mobile menu
 
 hamburger.addEventListener('click', () => {
@@ -112,3 +113,7 @@ function closeModal(id = null) {
 
 openModal();
 closeModal();
+
+
+// Form validation
+
