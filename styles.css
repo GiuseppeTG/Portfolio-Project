@@ -22,13 +22,18 @@ header {
 }
 
 header.full-screen {
-  background-image: url(images/Image-top-menu.png), url(images/image-bottom-menu.png), url(images/image-dots-menu.png), url(images/image-dots-menu.png);
+  background-image:
+    url(images/Image-top-menu.png),
+    url(images/image-bottom-menu.png),
+    url(images/image-dots-menu.png),
+    url(images/image-dots-menu.png);
   background-repeat: no-repeat, repeat-x, no-repeat;
   background-position: 0% 0%, 0% 100%, 80% 15%, 15% 80%;
 }
 
 .navbar li {
   list-style: none;
+  margin-bottom: 80px;
 }
 
 footer a {
@@ -51,6 +56,11 @@ footer a {
   font-weight: 500;
   color: white;
   text-decoration: none;
+}
+
+.modal-link a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-container a {
@@ -375,6 +385,141 @@ textarea::placeholder {
   font-size: 1.5em;
 }
 
+/* Modal window */
+
+.overlay {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.529);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  transform: scale(0);
+  z-index: 101;
+}
+
+.overlay.active {
+  transform: translate(-50%, -50%) scale(1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  max-width: 550px;
+  padding: 5%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modal-project-name {
+  color: #1a2236;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.close-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 40px;
+  transform: translateY(-10px) translateX(4px);
+}
+
+.modal-container ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 18px 0;
+}
+
+.modal-container ul li {
+  border: 1px black solid;
+  padding: 4px 6px;
+}
+
+.modal-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.modal-img-container img {
+  width: 100%;
+}
+
+#modal-img-preview {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#modal-img-preview img {
+  display: block;
+  width: 25%;
+}
+
+.modal-project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.p-container {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.modal-container p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.modal-link-container {
+  margin: 20px auto 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.modal-link {
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border: black solid 1px;
+  transition: 1s;
+}
+
+.modal-link:hover {
+  color: white;
+  background-color: #1a2236;
+}
+
 /* Social Media Section */
 
 footer {
@@ -388,8 +533,17 @@ footer {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 376px) {
+  .modal-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+
 @media only screen and (min-width: 768px) {
-  
   header {
     min-height: 100px;
     align-items: center;
@@ -416,10 +570,33 @@ footer {
     top: 22px;
   }
 
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    padding: 5%;
+  }
+
+  #modal-project-name {
+    color: #1a2236;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  .close-button {
+    font-size: 40px;
+    transform: translateY(-20px) translateX(4px);
+  }
+
+  .modal-link-container {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-
   main {
     width: 1440px;
     margin: auto;
@@ -686,6 +863,19 @@ footer {
     margin: 32px 130px;
     font-size: 18px;
   }
+
+  /* modal */
+
+  .modal-container {
+    max-width: 600px;
+  }
+
+  .close-button {
+    font-size: 50px;
+    transform: translateY(-30px) translateX(4px);
+  }
+
+  /* footer */
 
   footer {
     display: flex;
