@@ -351,7 +351,7 @@ footer ul {
 }
 
 .valid {
-  border: rgb(0, 163, 0) solid 1px
+  border: rgb(0, 163, 0) solid 1px;
 }
 
 .text-box::placeholder {
