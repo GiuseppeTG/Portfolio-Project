@@ -187,7 +187,7 @@ function getData() {
   const localData = JSON.parse(localStorage.getItem('formData'));
   username.setAttribute('value', localData.username);
   email.setAttribute('value', localData.email);
-  message.setAttribute('value', localData.message);
+  message.textContent = localData.message;
 }
 
 getData();
