@@ -123,20 +123,84 @@ const form = document.querySelector('#form');
 const username = document.querySelector('#user-name');
 const email = document.querySelector('#user-email');
 const errorMessage = document.querySelector('#error-message');
+const message = document.querySelector('#user-comment');
 
-form.addEventListener('submit', (e) => {
+
+ form.addEventListener('submit', (e) => {
+
   e.preventDefault();
+
   if (username.value === '') {
     errorMessage.textContent = 'Name cannot be blank';
+    username.classList.add('invalid');
     return;
-  } if (username.value.length < 3 || username.value.length > 20) {
-    errorMessage.textContent = 'Name must be between three and twenty characters';
-    return;
+  } else {
+    username.classList.remove('invalid');
+    username.classList.add('valid');
   }
-  if (email.value !== email.value.toLowerCase()) {
-    errorMessage.innerHTML = 'Email must be in lower case';
+  if (username.value.length < 3 || username.value.length > 20) {
+    errorMessage.textContent = 'Name must have between 3 to 20 characters';
+    username.classList.add('invalid');
     return;
+  } else {
+    username.classList.remove('invalid');
+    username.classList.add('valid');
   }
+  if (email.value !== email.value.toLowerCase() || email.value == ''){
+    errorMessage.textContent = 'Most enter a valid email in lower case';
+    email.classList.add('invalid');
+    return;
+  } else {
+    email.classList.remove('invalid');
+    email.classList.add('valid');
+  }
+  if (message.value.length > 1000 || message.value === '') {
+    errorMessage.textContent = 'Most write a message of less than 1000 characters';
+    message.classList.add('invalid');
+    return;
+  } else {
+    message.classList.remove('invalid');
+    message.classList.add('valid');
+  }
+   form.submit();
+ });
 
-  form.submit();
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

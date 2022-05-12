@@ -346,6 +346,14 @@ footer ul {
   width: 100%;
 }
 
+.invalid {
+  border: red solid 1px;
+}
+
+.valid {
+  border: rgb(0, 163, 0) solid 1px
+}
+
 .text-box::placeholder {
   transform: translateY(-13px);
   font-family: 'Poppins', sans-serif;
