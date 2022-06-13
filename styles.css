@@ -23,10 +23,10 @@ header {
 
 header.full-screen {
   background-image:
-    url(/images/Image-top-menu.png),
-    url(/images/image-bottom-menu.png),
-    url(/images/image-dots-menu.png),
-    url(/images/image-dots-menu.png);
+    url(./images/Image-top-menu.png),
+    url(./images/image-bottom-menu.png),
+    url(./images/image-dots-menu.png),
+    url(./images/image-dots-menu.png);
   background-repeat: no-repeat, repeat-x, no-repeat;
   background-position: 0% 0%, 0% 100%, 80% 15%, 15% 80%;
 }
@@ -211,7 +211,7 @@ label {
 
 .background-separator {
   height: 150px;
-  background-image: url(/images/figures-big1.png);
+  background-image: url(./images/figures-big1.png);
 }
 
 /* Work section  */
@@ -303,21 +303,21 @@ footer ul {
 
 .languages-container {
   background-color: #1c528a;
-  background-image: url(/images/languages-corner-image.png);
+  background-image: url(./images/languages-corner-image.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .frameworks-container {
   background-color: #e2505c;
-  background-image: url(/images/frameworks-corner-image.png);
+  background-image: url(./images/frameworks-corner-image.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .skill-container {
   background-color: #febf52;
-  background-image: url(/images/skills-corner-image.png);
+  background-image: url(./images/skills-corner-image.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -649,7 +649,7 @@ footer {
     height: 877px;
     padding: 90px 90px 260px 160px;
     margin: 0;
-    background-image: url(/images/image-dots.png);
+    background-image: url(./images/image-dots.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
   }
@@ -663,7 +663,7 @@ footer {
 
   .background-headline-container {
     width: 702px;
-    background-image: url(/images/headline-section-background.png);
+    background-image: url(./images/headline-section-background.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -718,7 +718,7 @@ footer {
     height: auto;
     padding: 0;
     margin: 0;
-    background-image: url(/images/image-dots.png);
+    background-image: url(./images/image-dots.png);
     background-position: 105% 0%;
     background-repeat: no-repeat;
   }
@@ -754,15 +754,15 @@ footer {
     width: 975px;
     padding-top: 80px;
     background-image:
-      url(/images/image-geometry-2.png),
-      url(/images/figure-red.png);
+      url(./images/image-geometry-2.png),
+      url(./images/figure-red.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 0%, 100% 100%;
   }
 
   .group-4-5 {
     width: 465px;
-    background-image: url(/images/image-geometry-3.png);
+    background-image: url(./images/image-geometry-3.png);
     background-repeat: no-repeat;
     background-position: 100% 85.4%;
   }
@@ -777,8 +777,8 @@ footer {
 
   .container-3 {
     background-image:
-      url(/images/figure-yellow.png),
-      url(/images/image-geometry-4.png);
+      url(./images/figure-yellow.png),
+      url(./images/image-geometry-4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 52.5% 0%, 0% 0%;
   }
@@ -814,7 +814,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     margin: 0;
     width: 578px;
-    background-image: url(/images/image_dots-with-teal.png);
+    background-image: url(./images/image_dots-with-teal.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
   }
@@ -824,8 +824,8 @@ footer {
   .get-started-section-container {
     width: 100%;
     background-image:
-      url(/images/image-geometry-6.png),
-      url(/images/image-geometry-7.png);
+      url(./images/image-geometry-6.png),
+      url(./images/image-geometry-7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 0%, 100% 100%;
     padding: 100px;
