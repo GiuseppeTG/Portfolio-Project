@@ -2,12 +2,12 @@
 
 # Portfolio: setup and mobile version skeleton
 
-> In this project, I imitated Figma template 5. I used HTML and CSS and applied the linters respectively.
+> In this project, I imitated Figma template 5. I used HTML and CSS and JS. It is just a template it does not contain any of my actual work.
 
 
 ## Built With
 
-- Major languages: HTML and CSS
+- Major languages: HTML, CSS and JS
 - Technologies used: VSC, git and GitHub
 
 ## Getting Started
