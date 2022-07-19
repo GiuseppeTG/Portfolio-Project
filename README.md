@@ -4,7 +4,7 @@
 
 > In this project, I imitated Figma template 5. I used HTML and CSS and JS. It is just a template it does not contain any of my actual work.
 ![](images/screenshots/laptop.png) 
-![](images/screenshots/laptop.png)
+![](images/screenshots/mobile.png)
 
 
 ## Built With
