@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-[Live Demo](https://giuseppetg.github.io/Giuseppe-Portfolio/)
+[Live Demo](https://giuseppetg.github.io/Portfolio-Project/)
 
 To run this project locally on your computer clone using "git clone" command with this repo url.
 Open the file in your code editor. 
